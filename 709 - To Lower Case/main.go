@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	s := "Hello"
@@ -12,4 +15,8 @@ func main() {
 		}
 	}
 	fmt.Println(string(res))
+
+	another := "LOVE"
+	anotherRes := strings.ToLower(another)
+	fmt.Println(anotherRes)
 }
