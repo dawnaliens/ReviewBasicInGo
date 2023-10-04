@@ -15,4 +15,9 @@ func main() {
 	fmt.Println(res1)
 	fmt.Println(res2)
 	fmt.Println(res3)
+
+	name := "Richard"
+	for i := 0; i < len(name); i++ {
+		fmt.Println(name[i])
+	}
 }
