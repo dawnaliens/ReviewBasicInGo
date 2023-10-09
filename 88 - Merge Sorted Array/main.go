@@ -5,6 +5,8 @@ import (
 )
 
 func merge(nums1 []int, m int, nums2 []int, n int) {
+	// We do not want to move the majority of elements
+	//
 	for p := m + n; m > 0 && n > 0; p-- {
 		if nums1[m-1] <= nums2[n-1] {
 			nums1[p-1] = nums2[n-1]
